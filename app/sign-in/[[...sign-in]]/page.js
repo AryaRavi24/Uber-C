@@ -5,9 +5,9 @@ export default function Page() {
   return (
 <div className='bg-fixed'>
     
-        <Image src='/uberbanner.jpg' width={900} height={400} className='w-full h-full' />
+        {/* <Image src='/uberbanner.jpg' width={900} height={400} className='w-full h-full' /> */}
         <div className='absolute bottom-40 right-30'>
-            <SignIn/>
+            {/* <SignIn/> */}
         </div>
     
   </div>

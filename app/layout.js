@@ -1,14 +1,15 @@
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
+// import {
+//   ClerkProvider,
+//   SignInButton,
+//   SignUpButton,
+//   SignedIn,
+//   SignedOut,
+//   UserButton,
+// } from '@clerk/nextjs'
 import Header from "@/components/Header";
+import FirstPage from "@/components/Home/FirstPage/FirstPage";
 
 const inter = Montserrat({subsets: ['latin']})
 
@@ -29,15 +30,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
+  
       <html lang="en">
         {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> */}
 
         <body className={inter.className}>
           <Header />
+          <div className=' w-screen h-screen'>
+            <div className='w-[80%] h-screen  mx-auto '>
+              <FirstPage />
+            </div>
+          </div>
           {children}
         </body>
       </html>
-    </ClerkProvider>
+    
+    // {/* </ClerkProvider> */}
   )
 }

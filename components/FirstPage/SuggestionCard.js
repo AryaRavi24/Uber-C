@@ -39,9 +39,6 @@ function SuggestionCard() {
 
         ))
     }
-        
-       
-       {/* <Image src={}/> */}
 
     </>
   )

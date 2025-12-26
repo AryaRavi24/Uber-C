@@ -2,7 +2,6 @@
 import MapSection from "@/components/Home/MapSection";
 import Search from "@/components/Home/Search";
 import { SourceContext } from "@/context/SourceContext";
-import { UserButton } from "@clerk/nextjs";
 import { LoadScript } from "@react-google-maps/api";
 import Image from "next/image";
 import { useState } from "react";

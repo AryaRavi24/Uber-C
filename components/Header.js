@@ -1,4 +1,3 @@
-// import { UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import React from 'react'
 
@@ -36,7 +35,6 @@ function Header() {
                 <h1 className="">Sign up</h1>
             </div>
         </div>
-        {/* <UserButton />   */}
     </div>
   )
 }

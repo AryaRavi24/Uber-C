@@ -9,7 +9,8 @@ import "./globals.css";
 //   UserButton,
 // } from '@clerk/nextjs'
 import Header from "@/components/Header";
-import FirstPage from "@/components/Home/FirstPage/FirstPage";
+import FirstPage from "@/components/FirstPage/FirstPage";
+import Footer from "@/components/Footer";
 
 const inter = Montserrat({subsets: ['latin']})
 
@@ -37,11 +38,14 @@ export default function RootLayout({ children }) {
 
         <body className={inter.className}>
           <Header />
-          <div className=' w-screen h-screen'>
-            <div className='w-[80%] h-screen  mx-auto '>
+          <div className=' w-screen min-h-screen'>
+            <div className='w-[80%] min-h-screen mx-auto '>
               <FirstPage />
             </div>
+            <Footer />
+
           </div>
+
           {children}
         </body>
       </html>

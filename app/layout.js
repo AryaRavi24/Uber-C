@@ -28,15 +28,7 @@ export default function RootLayout({ children }) {
         {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> */}
 
         <body className={inter.className}>
-          <Header />
-          <div className=' w-screen min-h-screen'>
-            <div className='w-[80%] min-h-screen mx-auto '>
-              <FirstPage />
-            </div>
-            <Footer />
-
-          </div>
-
+  
           {children}
         </body>
       </html>

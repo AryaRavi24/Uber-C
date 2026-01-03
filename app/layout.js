@@ -1,8 +1,6 @@
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import FirstPage from "@/components/FirstPage/FirstPage";
-import Footer from "@/components/Footer";
+
 
 const inter = Montserrat({subsets: ['latin']})
 
@@ -25,10 +23,7 @@ export default function RootLayout({ children }) {
   return (
   
       <html lang="en">
-        {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> */}
-
         <body className={inter.className}>
-  
           {children}
         </body>
       </html>

@@ -7,8 +7,6 @@ function page() {
             <div className='w-[80%] min-h-screen mx-auto '>
               <FirstPage />
             </div>
-            {/* <Footer /> */}
-
           </div>
   )
 }

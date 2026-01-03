@@ -13,12 +13,17 @@ function page() {
 
           </div>
         </div>
-        
-        <div className='border w-1/2 flex justify-center items-center'>
-          <div className='p-18 rounded-lg w-3/4 '>
+        <div>
+          
+        </div>
+        <div className='w-1/2  relative'>
+        <Link className='absolute right-3 top-3' href='/'>
+          <Image src='/close_black.png' width={30} height={70}/>
+        </Link>
+          <div className='p-18 rounded-lg w-3/4 mx-auto mt-38'>
             <h1 className='text-2xl font-semibold'>Login</h1>
              <input type='text' placeholder='Enter Phone Number or Email' className='bg-neutral-100 w-full p-3 rounded-lg mt-5 focus:outline-black'/>
-             <input type='password' placeholder='Enter Email' className=' bg-neutral-100 w-full p-3 rounded-lg mt-5 focus:outline-black'/>
+             <input type='password' placeholder='Enter Password' className=' bg-neutral-100 w-full p-3 rounded-lg mt-5 focus:outline-black'/>
              <button className='mt-5 text-center border w-full p-3 bg-black text-white font-semibold rounded-lg'>Login</button>
              <p className='mt-5 text-center'>Don't have an account?<Link href='/Register' className='px-1 text-blue-700'>Sign Up</Link></p>
           </div>

@@ -1,8 +1,8 @@
 import React from 'react'
-import SuggestionCard from './SuggestionCard'
-import ImageCard from './ImageCard'
+import SuggestionCard from '../SuggestionCard'
+import ImageCard from '../ImageCard'
 
-function FirstPage() {
+export default function FirstPage() {
 
   const posterImg = [
         {
@@ -116,4 +116,3 @@ function FirstPage() {
   )
 }
 
-export default FirstPage

@@ -1,4 +1,4 @@
-import FirstPage from '@/components/FirstPage/FirstPage'
+import FirstPage from '../../components/FirstPage'
 import React from 'react'
 
 function page() {
@@ -7,7 +7,7 @@ function page() {
             <div className='w-[80%] min-h-screen mx-auto '>
               <FirstPage />
             </div>
-          </div>
+    </div>
   )
 }
 

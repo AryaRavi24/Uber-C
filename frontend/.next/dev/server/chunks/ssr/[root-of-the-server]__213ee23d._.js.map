@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/aryar/OneDrive/Desktop/Arya/uber-c/frontend/app/%28public%29/page.js"],"sourcesContent":["import FirstPage from '../../../components/FirstPage'\r\nimport React from 'react'\r\n\r\nfunction page() {\r\n  return (\r\n    <div className=' w-screen min-h-screen'>\r\n            <div className='w-[80%] min-h-screen mx-auto '>\r\n              <FirstPage />\r\n            </div>\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default page"],"names":[],"mappings":";;;;;;;;;;AACA;;;;AAEA,SAAS;IACP,qBACE,8OAAC;QAAI,WAAU;kBACP,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;;;;;;;;;;;;;;;AAIf;uCAEe"}}]
+}

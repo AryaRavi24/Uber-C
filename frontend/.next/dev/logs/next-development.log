@@ -1,0 +1,144 @@
+[00:00:01.359] Server  LOG      ✓ Ready in 887ms
+[00:00:08.136] Server  LOG      ○ Compiling / ...
+[00:00:08.417] Server  ERROR    ⨯ ./app/(public)/layout.js:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | // import Footer from "../../../components/Footer";
+  3 | import Header from "@/components/Header";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 |
+  7 | export default function PublicLayout({ children }) {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/(public)/layout.js:3:1
+Module not found: Can't resolve '@/components/Header'
+  1 | // import Header from "../../../components/Header";
+  2 | // import Footer from "../../../components/Footer";
+> 3 | import Header from "@/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Footer from "@/components/Footer";
+  5 |
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:11.861] Browser ERROR   uncaughtError: Error: ./app/(public)/layout.js:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | // import Footer from "../../../components/Footer";
+  3 | import Header from "@/components/Header";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 |
+  7 | export default function PublicLayout({ children }) {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:12.440] Browser ERROR   ./app/(public)/layout.js:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | // import Footer from "../../../components/Footer";
+  3 | import Header from "@/components/Header";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 |
+  7 | export default function PublicLayout({ children }) {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.440] Browser ERROR   ./app/(public)/layout.js:3:1
+Module not found: Can't resolve '@/components/Header'
+  1 | // import Header from "../../../components/Header";
+  2 | // import Footer from "../../../components/Footer";
+> 3 | import Header from "@/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Footer from "@/components/Footer";
+  5 |
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.440] Browser ERROR   ./app/(public)/layout.js:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | // import Footer from "../../../components/Footer";
+  3 | import Header from "@/components/Header";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 |
+  7 | export default function PublicLayout({ children }) {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.440] Browser ERROR   ./app/(public)/layout.js:3:1
+Module not found: Can't resolve '@/components/Header'
+  1 | // import Header from "../../../components/Header";
+  2 | // import Footer from "../../../components/Footer";
+> 3 | import Header from "@/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Footer from "@/components/Footer";
+  5 |
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:27.722] Server  LOG      ✓ Compiled in 143ms
+[00:02:28.439] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. It was passed a child from SuggestionCard. See https://react.dev/link/warning-keys for more information.
+[00:02:29.230] Server  LOG      ✓ Compiled in 51ms
+[00:02:31.091] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the top-level render call using <div>.  It was passed a child from SuggestionCard.
+[00:02:31.091] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="montserrat_b903b706-module__KaO1Jq__className"
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:02:31.092] Browser WARN    Image with src "/uber-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:31.092] Browser WARN    Image with src "/taxi.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:31.092] Browser WARN    Image with src "/box.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:45.249] Browser ERROR   Image is missing required "alt" property. Please add Alternative Text to describe the image for screen readers and search engines.
+[00:02:45.249] Browser ERROR   Image is missing required "alt" property. Please add Alternative Text to describe the image for screen readers and search engines.
+[00:02:45.410] Browser WARN    Image with src "/close_black.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:51.790] Browser ERROR   Image is missing required "alt" property. Please add Alternative Text to describe the image for screen readers and search engines.
+[00:02:51.790] Browser ERROR   Image is missing required "alt" property. Please add Alternative Text to describe the image for screen readers and search engines.
